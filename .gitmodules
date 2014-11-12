@@ -1,0 +1,4 @@
+[submodule "discord"]
+path = discord
+url = https://github.com/savetheinternet/Tinyboard.git
+branch = master
