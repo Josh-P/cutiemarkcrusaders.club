@@ -1,0 +1,247 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*CMC Style */
+
+nav {
+	width: 100%;
+	height: 40px;
+	background-color: #FFA83F;
+	position: fixed;
+	z-index: 99999;
+} /* The portion above is the menu bar outside of the body limits. Having a different color to the menu helps to add definition*/
+.nav-placeholder {
+	width: 100%;
+	height: 40px;
+	background-color: #FFA83F;
+}
+.nav-container {
+	width: 960px;
+	height: 40px;
+	margin: 0 auto;
+	background-color: #FFA83F;
+} /*The portion above is the menu bar at the top, and defines a border for the body determined by the width*/
+.nav-container li , a {
+	display: inline-block;
+	text-decoration: none;
+	color: #0075B5;
+	margin-left: 10px;
+	line-height: 40px;
+	font-family: Arial;
+	font-size: 15px;
+} /* The portion above, or portions rather, define how the menu text should look (aka HOME ABOUT etc)*/
+.nav-container li , a:hover {
+	color: #fff;
+} /* The portion above simply controls what the menu items look like when the mouse hovers over them*/
+.selected a {
+	color: #fff;
+	background-color: #FF4242;
+	padding-right: 20px;
+	padding-left: 20px;
+} /* The portion above controls what a menu item looks like when it has been selected*/
+header {
+	width: 100%;
+	height: 400px;
+	background: #ff4242; /* Old browsers */
+background: -moz-linear-gradient(top,  #ff4242 0%, #ffa83f 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff4242), color-stop(100%,#ffa83f)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ff4242 0%,#ffa83f 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ff4242 0%,#ffa83f 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ff4242 0%,#ffa83f 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ff4242 0%,#ffa83f 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4242', endColorstr='#ffa83f',GradientType=0 ); /* IE6-9 */
+lter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+
+} /* The portion above controls how the header looks (aka the huge banner at the top of the page) */
+.header-container {
+	width: 960px;
+	height: 400px;
+	margin: 0 auto;
+} /* The portion above controls a smaller area of the header, the same width as the menu bar */
+.header-container-left {
+	width: 540px;
+	height: 400px;
+	float: left;
+} /* The portion above controls a small left portion of the header container */
+.header-container-right {
+	width: 420px;
+	height: 400px;
+	float: left;
+} /* The portion above controls a small right portion of the header container */
+.header-container-right h1 {
+	color: #fff;
+	font-size: 25px;
+	font-family: Arial;
+	text-align: left;
+	margin-top: 70px;
+} /* The portion above controls how the main header text appears */
+.header-container-right p {
+	color: #e2e2e2;
+	font-size: 18px;
+	font-family: Helvetica;
+	text-align: left;
+	line-height: 25px;
+} /* The portion above controls how the paragraph text beneath the main header text appears */
+.body {
+	width: 960px;
+	height: 100%;
+	margin: 0 auto;
+background-image: url('img/pattern.png');
+background-repeat: repeat;
+}
+.body-header-first {
+	width: 600px;
+	height: 40px;
+	float: right;
+	margin-top: 40px;
+} /* The portion above defines the bounds of the first header in the body of the site */
+.body-header-first h1 {
+	width: 600px;
+	color: #000;
+	font-size: 30px;
+	font-family: 'Helvetica';
+	font-weight: bold;
+	text-align: right;
+}
+.thumb-first {
+	width: 319px;
+	height: 201px;
+	float: left;
+	margin-top: 40px;
+	margin-left: 0px;
+	border: 6px solid #7db9e8;
+}
+.thumb-text {
+	width: 600px;
+	height: 201px;
+	float: right;
+}
+.thumb-text p {
+	width: 600px;
+	color: #000;
+	font-size: 19px;
+	font-family: 'Arial';
+	text-align: right;
+	line-height: 24px;
+}
+.body-headers {
+	width: 600px;
+	height: 40px;
+	float: right;
+}
+.body-headers h1 {
+	width: 600px;
+	color: #000;
+	font-size: 30px;
+	font-family: 'Helvetica';
+	font-weight: bold;
+	text-align: right;
+}
+.thumbs {
+	width: 319px;
+	height: 201px;
+	float: left;
+	margin-left: 0;
+	border: 6px solid #7db9e8;
+}
+.footer {
+	width: 600px;
+	height: 40px;
+	float: right;
+	margin-top: 40px;
+}
+.footer p {
+	width: 600px;
+	color: #777777;
+	font-size: 15px;
+	font-family: 'Helvetica';
+	text-align: center;
+}
+hr {
+	width: 100%;
+	height: 10px;
+	background: linear-gradient(90deg, white, #ff4242, white) no-repeat;
+	margin-top: 0;
+}
+body {
+	width: 100%;
+	height: 100%;
+background: -webkit-linear-gradient(top, rgba(255,66,66,1), rgba(255,168,63,0)), url(http://cutiemarkcrusaders.club/applebloom/img/pattern.png); background-attachment: fixed; /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(top, rgba(255,66,66,1), rgba(255,168,63,0)), url(http://cutiemarkcrusaders.club/applebloom/img/pattern.png); background-attachment: fixed; /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(top, rgba(255,66,66,1), rgba(255,168,63,0)), url(http://cutiemarkcrusaders.club/applebloom/img/pattern.png); background-attachment: fixed; /* For Firefox 3.6 to 15 */
+background: linear-gradient(to bottom, rgba(255,66,66,1), rgba(255,168,63,0)), url(http://cutiemarkcrusaders.club/applebloom/img/pattern.png); background-attachment: fixed; /* Standard syntax (must be last) */
+}
+/* THE FOLLOWING IS CSS THAT DEFINES THE LOOK OF BUTTONS WHEN HOVERING OVER THEM. IN THE HTML, SIMPLY ADD THE CLASS NEEDED TO THE CONTAINER */
+.grow {
+  display: inline-block;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.grow:hover, .grow:focus, .grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.glow {
+  display: inline-block;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.glow:hover, .glow:focus, .glow:active {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
